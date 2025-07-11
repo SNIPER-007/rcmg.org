@@ -17,7 +17,7 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
 // Highlight Active Section in Navbar
 window.addEventListener('scroll', () => {
     let scrollPosition = window.scrollY;
-    
+
     document.querySelectorAll('section').forEach(section => {
         if (scrollPosition >= section.offsetTop - 100 && scrollPosition < section.offsetTop + section.offsetHeight) {
             document.querySelectorAll('nav ul li a').forEach(navLink => {
@@ -40,3 +40,19 @@ document.querySelectorAll('video').forEach(video => {
         });
     });
 });
+
+// Hamburger Menu Toggle
+const hamburger = document.createElement('div');
+hamburger.classList.add('hamburger');
+hamburger.innerHTML = '&#9776;';
+
+const header = document.querySelector('header');
+const nav = document.querySelector('nav ul');
+
+if (header && nav) {
+    header.prepend(hamburger);
+
+    hamburger.addEventListener('click', () => {
+        nav.classList.toggle('show');
+    });
+}
