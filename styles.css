@@ -1,0 +1,214 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #001f3f;
+    color: #FFD700;
+    font-size: 18px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header and Navigation */
+header {
+    background: #001f3f;
+    color: #FFD700;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 5px 15px;
+}
+
+nav ul li a {
+    color: #FFD700;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background: #FFD700;
+    color: #001f3f;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: #00264d;
+}
+
+.hero img {
+    display: block;
+    margin: 0 auto;
+    max-width: 150px;
+}
+
+.hero h1 {
+    font-size: 28px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: 3px solid #FFD700;
+    display: inline-block;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    color: #FFD700;
+    background: transparent;
+}
+
+/* Section Styling */
+section {
+    padding: 50px 20px;
+    text-align: center;
+    background: #00264d;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+}
+
+h2, h3 {
+    color: #FFD700;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 22px;
+    margin-top: 30px;
+    border-bottom: 2px solid #FFD700;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Core Team Section */
+.core {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.core img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.core img:hover {
+    transform: scale(1.1);
+}
+
+/* Video Section */
+video {
+    max-width: 75%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* List Alignment */
+ul {
+    text-align: left;
+    padding-left: 40px;
+    font-weight: bold;
+}
+
+/* Sponsors Section */
+.sponsors ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.sponsors ul li {
+    margin: 8px 0;
+}
+
+.sponsors ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #FFD700;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.sponsors ul li a:hover {
+    color: white;
+}
+
+/* Contact Section Link Styling */
+#contact a {
+    color: #1DA1F2;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#contact a:hover {
+    color: #FFD700;
+}
+
+/* Footer */
+footer {
+    background: #000c1a;
+    color: #FFD700;
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .core img {
+        width: 100px;
+        height: 100px;
+    }
+
+    section {
+        padding: 30px 10px;
+    }
+
+    h1, h2, h3 {
+        font-size: 20px;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    .sponsors ul {
+        grid-template-columns: 1fr;
+    }
+}
