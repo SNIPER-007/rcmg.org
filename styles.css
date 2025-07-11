@@ -3,8 +3,8 @@ body {
     font-family: 'Segoe UI', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #001f3f;
-    color: #FFD700;
+    background-color: #121212;
+    color: #ffffff;
     font-size: 18px;
 }
 
@@ -14,11 +14,11 @@ html {
 
 /* Header and Navigation */
 header {
-    background: #001f3f;
-    color: #FFD700;
+    background: #1f1f1f;
+    color: #ffffff;
     padding: 15px 0;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
     position: fixed;
     top: 0;
     left: 0;
@@ -30,8 +30,8 @@ header {
 .hamburger {
     display: none;
     cursor: pointer;
-    font-size: 28px;
-    color: #FFD700;
+    font-size: 26px;
+    color: #ffffff;
     padding: 10px;
     position: absolute;
     top: 10px;
@@ -60,9 +60,9 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #FFD700;
+    color: #ffffff;
     text-decoration: none;
-    font-size: 19px;
+    font-size: 14px;
     font-weight: bold;
     transition: background 0.3s, color 0.3s;
     padding: 10px 15px;
@@ -71,8 +71,8 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-    background: #FFD700;
-    color: #001f3f;
+    background: #ffffff;
+    color: #121212;
     border-radius: 5px;
 }
 
@@ -80,7 +80,7 @@ nav.mobile ul {
     display: none;
     flex-direction: column;
     width: 100%;
-    background-color: #001f3f;
+    background-color: #1f1f1f;
 }
 
 nav.mobile ul.show {
@@ -91,7 +91,7 @@ nav.mobile ul.show {
 .hero {
     text-align: center;
     padding: 100px 20px 50px 20px;
-    background: #00264d;
+    background: #2b2b2b;
 }
 
 .hero img {
@@ -104,10 +104,10 @@ nav.mobile ul.show {
     font-size: 28px;
     margin-top: 10px;
     padding: 10px 20px;
-    border: 3px solid #FFD700;
+    border: 3px solid #ffffff;
     display: inline-block;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-    color: #FFD700;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
     background: transparent;
 }
 
@@ -115,15 +115,15 @@ nav.mobile ul.show {
 section {
     padding: 50px 20px;
     text-align: center;
-    background: #00264d;
+    background: #1f1f1f;
     margin: 20px auto;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     max-width: 1200px;
 }
 
 h2, h3 {
-    color: #FFD700;
+    color: #ffffff;
 }
 
 h2 {
@@ -134,7 +134,7 @@ h2 {
 h3 {
     font-size: 22px;
     margin-top: 30px;
-    border-bottom: 2px solid #FFD700;
+    border-bottom: 2px solid #ffffff;
     display: inline-block;
     padding-bottom: 5px;
 }
@@ -152,7 +152,7 @@ h3 {
     height: 150px;
     object-fit: cover;
     border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s;
 }
 
@@ -164,7 +164,7 @@ h3 {
 video {
     max-width: 75%;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* List Alignment */
@@ -192,30 +192,30 @@ ul {
 .sponsors ul li a {
     text-decoration: none;
     font-size: 18px;
-    color: #FFD700;
+    color: #ffffff;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 .sponsors ul li a:hover {
-    color: white;
+    color: #cccccc;
 }
 
 /* Contact Section Link Styling */
 #contact a {
-    color: #1DA1F2;
+    color: #87ceeb;
     font-weight: bold;
     text-decoration: underline;
 }
 
 #contact a:hover {
-    color: #FFD700;
+    color: #ffffff;
 }
 
 /* Footer */
 footer {
-    background: #000c1a;
-    color: #FFD700;
+    background: #0d0d0d;
+    color: #ffffff;
     text-align: center;
     padding: 15px;
     font-size: 16px;
