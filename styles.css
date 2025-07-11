@@ -32,6 +32,11 @@ header {
     font-size: 26px;
     color: #FFD700;
     padding: 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: none;
+    border: none;
 }
 
 nav {
@@ -219,8 +224,9 @@ footer {
 @media (max-width: 768px) {
     .hamburger {
         display: block;
-        text-align: right;
-        width: 100%;
+        position: absolute;
+        left: 10px;
+        top: 15px;
     }
 
     nav ul {
@@ -259,3 +265,4 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
