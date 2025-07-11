@@ -3,13 +3,22 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const targetId = this.getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetId);
 
-        if (targetElement) {
-            window.scrollTo({
-                top: targetElement.offsetTop - 50,
-                behavior: 'smooth'
-            });
+        if (targetId === '' || targetId === '#') {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        } else {
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 50,
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        // Close hamburger menu if open
+        if (nav.classList.contains('show')) {
+            nav.classList.remove('show');
         }
     });
 });
@@ -56,3 +65,4 @@ if (header && nav) {
         nav.classList.toggle('show');
     });
 }
+
