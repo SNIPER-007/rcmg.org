@@ -24,6 +24,7 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
+    min-height: 60px;
 }
 
 .hamburger {
@@ -222,6 +223,10 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
+    header {
+        min-height: 75px;
+    }
+
     .hamburger {
         display: block;
         position: absolute;
@@ -265,4 +270,3 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
