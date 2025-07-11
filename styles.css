@@ -31,7 +31,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 5px 15px;
+    margin: 5px 10px;
 }
 
 nav ul li a {
@@ -188,7 +188,13 @@ footer {
 /* Responsive */
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 4px 8px;
     }
 
     .core img {
@@ -209,6 +215,6 @@ footer {
     }
 
     .sponsors ul {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
