@@ -1,272 +1,270 @@
-/* General Styles */
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General */
 body {
-    font-family: 'Segoe UI', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #121212;
-    color: #ffffff;
-    font-size: 18px;
+  font-family: 'Segoe UI', sans-serif;
+  background: #121212;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.6;
 }
 
-html {
-    scroll-behavior: smooth;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-/* Header and Navigation */
+/* Header & Navbar */
 header {
-    background: #1f1f1f;
-    color: #ffffff;
-    padding: 15px 0;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    min-height: 60px;
+  background: #1f1f1f;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
 }
 
-.hamburger {
-    display: none;
-    cursor: pointer;
-    font-size: 26px;
-    color: #ffffff;
-    padding: 10px;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background: none;
-    border: none;
-}
-
-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+header .logo {
+  font-size: 22px;
+  font-weight: bold;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 nav ul li {
-    margin: 5px 10px;
+  position: relative;
 }
 
 nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
-    transition: background 0.3s, color 0.3s;
-    padding: 10px 15px;
-    display: inline-block;
+  padding: 8px 10px;
+  transition: all 0.3s;
 }
 
-nav ul li a:hover,
-nav ul li a.active {
-    background: #ffffff;
-    color: #121212;
-    border-radius: 5px;
+nav ul li a.active,
+nav ul li a:hover {
+  background: #fff;
+  color: #121212;
+  border-radius: 4px;
 }
 
-nav.mobile ul {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: #1f1f1f;
+/* Dropdown Menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 38px;
+  left: 0;
+  background: #1f1f1f;
+  list-style: none;
+  padding: 10px 0;
+  border-radius: 6px;
+  min-width: 200px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
 }
 
-nav.mobile ul.show {
-    display: flex;
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 15px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+/* Hamburger Menu (Mobile) */
+.hamburger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: #fff;
 }
 
 /* Hero Section */
 .hero {
-    text-align: center;
-    padding: 100px 20px 50px 20px;
-    background: #2b2b2b;
+  background: url('../assets/images/hero-bg.jpg') center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 70px;
 }
 
-.hero img {
-    display: block;
-    margin: 0 auto;
-    max-width: 150px;
+.small-hero {
+  height: 30vh;
 }
 
-.hero h1 {
-    font-size: 28px;
-    margin-top: 10px;
-    padding: 10px 20px;
-    border: 3px solid #ffffff;
-    display: inline-block;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
-    color: #ffffff;
-    background: transparent;
+.hero .overlay h1 {
+  font-size: 38px;
 }
 
-/* Section Styling */
-section {
-    padding: 50px 20px;
-    text-align: center;
-    background: #1f1f1f;
-    margin: 20px auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    max-width: 1200px;
+.hero .overlay p {
+  font-size: 20px;
+  margin-top: 10px;
 }
 
-h2, h3 {
-    color: #ffffff;
+/* Stats Section */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  gap: 20px;
+  padding: 40px 20px;
+  background: #1f1f1f;
 }
 
-h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
+/* Fix for number and + sign in one line */
+.stat .counter,
+.stat .plus-sign {
+  display: inline;
+  font-size: 32px;
+  font-weight: bold;
 }
 
-h3 {
-    font-size: 22px;
-    margin-top: 30px;
-    border-bottom: 2px solid #ffffff;
-    display: inline-block;
-    padding-bottom: 5px;
+.stat .plus-sign {
+  margin-left: 2px;
 }
 
-/* Core Team Section */
-.core {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
+/* Content & Gallery */
+.content {
+  padding: 50px 20px;
+  text-align: center;
 }
 
-.core img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
-    transition: transform 0.3s;
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
 }
 
-.core img:hover {
-    transform: scale(1.1);
+.gallery-grid img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
-/* Video Section */
-video {
-    max-width: 75%;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+/* Carousel */
+.carousel-section {
+  padding: 40px 20px;
+  text-align: center;
 }
 
-/* List Alignment */
-ul {
-    text-align: left;
-    padding-left: 40px;
-    font-weight: bold;
+.carousel {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 20px;
 }
 
-/* Sponsors Section */
-.sponsors ul {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 10px 40px;
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    max-width: 1000px;
+.carousel-track {
+  display: flex;
+  animation: scroll 25s linear infinite;
 }
 
-.sponsors ul li {
-    margin: 8px 0;
+.carousel-track img {
+  width: 240px;
+  height: 160px;
+  object-fit: cover;
+  margin: 0 10px;
+  border-radius: 8px;
 }
 
-.sponsors ul li a {
-    text-decoration: none;
-    font-size: 18px;
-    color: #ffffff;
-    font-weight: bold;
-    transition: color 0.3s;
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
-.sponsors ul li a:hover {
-    color: #cccccc;
+/* Buttons */
+.btn {
+  display: inline-block;
+  background: #fff;
+  color: #121212;
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin-top: 20px;
+  font-weight: bold;
 }
 
-/* Contact Section Link Styling */
-#contact a {
-    color: #87ceeb;
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-#contact a:hover {
-    color: #ffffff;
+.btn:hover {
+  background: #f0f0f0;
 }
 
 /* Footer */
 footer {
-    background: #0d0d0d;
-    color: #ffffff;
-    text-align: center;
-    padding: 15px;
-    font-size: 16px;
+  background: #0d0d0d;
+  text-align: center;
+  padding: 15px;
 }
 
-/* Responsive */
+footer p {
+  margin-bottom: 10px;
+}
+
+footer .social-links img {
+  width: 28px;
+  margin: 0 8px;
+}
+
+/* Mobile Responsive */
 @media (max-width: 768px) {
-    header {
-        min-height: 75px;
-    }
+  .hamburger {
+    display: block;
+  }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #1f1f1f;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    width: 220px;
+    padding: 20px;
+    gap: 10px;
+  }
+  nav ul.show {
+    display: flex;
+  }
+  nav ul li {
+    width: 100%;
+  }
+  .dropdown:hover .dropdown-menu {
+    display: none;
+  }
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    padding-left: 10px;
+  }
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.sponsors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
 
-    .hamburger {
-        display: block;
-        position: absolute;
-        left: 10px;
-        top: 15px;
-    }
-
-    nav ul {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    nav ul.show {
-        display: flex;
-    }
-
-    nav ul li {
-        margin: 4px 0;
-        text-align: center;
-    }
-
-    .core img {
-        width: 100px;
-        height: 100px;
-    }
-
-    section {
-        padding: 30px 10px;
-    }
-
-    h1, h2, h3 {
-        font-size: 20px;
-    }
-
-    body {
-        font-size: 16px;
-    }
-
-    .sponsors ul {
-        grid-template-columns: repeat(2, 1fr);
-    }
+.sponsors-grid span {
+  display: block;
+  font-weight: 500;
 }
