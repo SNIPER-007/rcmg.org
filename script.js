@@ -1,11 +1,8 @@
 // Hamburger toggle
-const hamburger = document.createElement('div');
-hamburger.classList.add('hamburger');
-hamburger.innerHTML = '&#9776;';
-const header = document.querySelector('header');
-const nav = document.querySelector('nav ul');
-if (header && nav) {
-  header.appendChild(hamburger);
+const hamburger = document.getElementById('hamburger');
+const nav = document.getElementById('nav-links');
+
+if (hamburger && nav) {
   hamburger.addEventListener('click', () => {
     nav.classList.toggle('show');
   });
@@ -14,40 +11,49 @@ if (header && nav) {
 // Close mobile nav on link click
 document.querySelectorAll('nav ul li a').forEach(link => {
   link.addEventListener('click', () => {
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth <= 768 && nav.classList.contains('show')) {
       nav.classList.remove('show');
     }
   });
 });
 
-// Dropdown toggle for mobile
+// Dropdown toggle (mobile only)
 document.querySelectorAll('.dropdown > a').forEach(dropdownLink => {
   dropdownLink.addEventListener('click', (e) => {
     if (window.innerWidth <= 768) {
       e.preventDefault();
-      dropdownLink.nextElementSibling.classList.toggle('show');
+      const menu = dropdownLink.nextElementSibling;
+      if (menu && menu.classList.contains('dropdown-menu')) {
+        menu.classList.toggle('show');
+      }
     }
   });
 });
 
-// Stats Counter
+// Stats Counter Animation (if data-target is set)
 const counters = document.querySelectorAll('.counter');
 const speed = 100;
+
 const animateCounters = () => {
   counters.forEach(counter => {
-    const updateCount = () => {
-      const target = +counter.getAttribute('data-target');
-      const count = +counter.innerText;
-      const increment = target / speed;
-      if (count < target) {
-        counter.innerText = Math.ceil(count + increment);
-        setTimeout(updateCount, 50);
-      } else {
-        counter.innerText = target;
-      }
-    };
-    updateCount();
+    const target = +counter.getAttribute('data-target');
+    const count = +counter.innerText;
+    if (!isNaN(target)) {
+      const updateCount = () => {
+        const current = +counter.innerText;
+        const increment = target / speed;
+        if (current < target) {
+          counter.innerText = Math.ceil(current + increment);
+          setTimeout(updateCount, 50);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      updateCount();
+    }
   });
 };
 
 window.addEventListener('load', animateCounters);
+
+
