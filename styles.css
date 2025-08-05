@@ -98,7 +98,7 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-  background: url('assets/images/c293f8aa-297c-47ab-bd38-17dd354d0def.png') center/cover no-repeat;
+  background: url('musicbg.png') center/cover no-repeat;
   height: 70vh;
   display: flex;
   justify-content: center;
@@ -246,5 +246,6 @@ footer .social-links img {
     width: 40px;
   }
 }
+
 
 
