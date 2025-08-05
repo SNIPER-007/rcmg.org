@@ -4,79 +4,45 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>RCMG - Home</title>
-  <link rel="stylesheet" href="styles.css"/>
-  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
-<header>
-  <img src="2025-26.png" alt="Club Logo" class="club-logo" />
-  <nav>
-    <ul>
-      <li><a class="active" href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="sponsors.html">Sponsors</a></li>
-      <li class="dropdown">
-        <a href="#">Gallery ▾</a>
-        <ul class="dropdown-menu">
-          <li><a href="core-team.html">Meet The Team</a></li>
-          <li><a href="achievements.html">Achievements</a></li>
-        </ul>
-      </li>
-      <li><a href="get-involved.html">Get Involved</a></li>
-    </ul>
-  </nav>
-</header>
-<section class="hero">
-  <div class="overlay">
-    <h1>Rotaract Club of MG</h1>
-    <p>Our Year Theme: <span class="theme">#ServingWithPassion</span></p>
+  <header>
+    <img src="2025-26.png" alt="Club Logo" class="club-logo" />
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <nav>
+      <ul id="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="sponsors.html">Sponsors</a></li>
+        <li class="dropdown desktop-only">
+          <a href="#">Gallery</a>
+          <ul class="dropdown-menu">
+            <li><a href="photo-gallery.html">Photo Gallery</a></li>
+            <li><a href="video-gallery.html">Video Gallery</a></li>
+          </ul>
+        </li>
+        <!-- Mobile-specific links (no dropdown) -->
+        <li class="mobile-only"><a href="photo-gallery.html">Photo Gallery</a></li>
+        <li class="mobile-only"><a href="video-gallery.html">Video Gallery</a></li>
+        <li><a href="get-involved.html">Get Involved</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <div class="stats">
-      <div class="stat">
-        <span class="counter" data-target="124">0</span>
-        <p>Members</p>
-      </div>
-      <div class="stat">
-        <span class="counter" data-target="4">4</span>
-        <p>Zone</p>
-      </div>
-      <div class="stat">
-        <span class="counter" data-target="3141">3141</span>
-        <p>District</p>
-      </div>
-      <div class="stat">
-        <span class="counter" data-target="110">0</span><span class="plus-sign">+</span>
-        <p>Projects</p>
+  <section class="hero home-hero">
+    <div class="hero-overlay">
+      <h1>Rotaract Club of MG</h1>
+      <p>Our Year Theme: <span class="theme">#ServingWithPassion</span></p>
+      <div class="stats-overlay">
+        <div class="stat"><span class="counter">124</span><br>Members</div>
+        <div class="stat"><span class="counter">4</span><br>Zone</div>
+        <div class="stat"><span class="counter">3141</span><br>District</div>
+        <div class="stat"><span class="counter">110</span><span class="plus-sign">+</span><br>Projects</div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="carousel-section">
-  <h2>Moments to Remember</h2>
-  <div class="carousel" id="moments-carousel">
-    <div class="carousel-track">
-      <img src="assets/images/moment1.jpg" alt="Moment 1">
-      <img src="assets/images/moment2.jpg" alt="Moment 2">
-      <img src="assets/images/moment3.jpg" alt="Moment 3">
-    </div>
-  </div>
-</section>
-
-<footer>
-  <p>Website Created by <strong>Rtr. Chittansh Pancholi</strong></p>
-  <div class="social-links">
-    <a href="https://instagram.com/rotaractghatkopar"><img src="assets/logos/instagram.png" alt="Instagram"></a>
-    <a href="https://linkedin.com"><img src="assets/logos/linkedin.png" alt="LinkedIn"></a>
-    <a href="https://facebook.com"><img src="assets/logos/facebook.png" alt="Facebook"></a>
-    <a href="mailto:rcmg@example.com"><img src="assets/logos/email.png" alt="Email"></a>
-  </div>
-</footer>
 </body>
 </html>
-
-
-
-
-
-
