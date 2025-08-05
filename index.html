@@ -4,16 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>RCMG - Home</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css"/>
   <script defer src="script.js"></script>
 </head>
 <body>
-
 <header>
-  <div class="logo">
-    <img src="2025-26.png" alt="RCMG Logo">
-  </div>
-  <div class="hamburger">&#9776;</div>
+  <img src="2025-26.png" alt="Club Logo" class="club-logo" />
   <nav>
     <ul>
       <li><a class="active" href="index.html">Home</a></li>
@@ -31,14 +27,15 @@
   </nav>
 </header>
 
-<!-- Piano image -->
-<img src="piano-wavy.png" alt="Piano Decoration" class="piano-image"/>
-
 <section class="hero">
   <div class="overlay">
     <h1>Rotaract Club of MG</h1>
     <p>Our Year Theme: <span class="theme">#ServingWithPassion</span></p>
   </div>
+</section>
+
+<section class="piano-scroll">
+  <img src="piano-wavy.png" alt="Piano" class="piano-image" />
 </section>
 
 <section class="stats">
@@ -47,11 +44,11 @@
     <p>Members</p>
   </div>
   <div class="stat">
-    <span class="counter" data-target="4">0</span>
+    <span class="counter" data-target="4">4</span>
     <p>Zone</p>
   </div>
   <div class="stat">
-    <span class="counter">3141</span>
+    <span class="counter" data-target="3141">3141</span>
     <p>District</p>
   </div>
   <div class="stat">
@@ -62,7 +59,7 @@
 
 <section class="carousel-section">
   <h2>Moments to Remember</h2>
-  <div class="carousel">
+  <div class="carousel" id="moments-carousel">
     <div class="carousel-track">
       <img src="assets/images/moment1.jpg" alt="Moment 1">
       <img src="assets/images/moment2.jpg" alt="Moment 2">
@@ -80,8 +77,5 @@
     <a href="mailto:rcmg@example.com"><img src="assets/logos/email.png" alt="Email"></a>
   </div>
 </footer>
-
 </body>
 </html>
-
-
