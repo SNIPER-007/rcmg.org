@@ -13,9 +13,18 @@ body {
   line-height: 1.6;
 }
 
-/* Navbar & Header */
+/* Homepage background */
+body.home .hero {
+  background: url('assets/musicbg.png') center/cover no-repeat;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 header {
-  background: #0a1733; /* darker blue */
+  background: #0a1733;
   position: fixed;
   top: 0;
   width: 100%;
@@ -47,23 +56,25 @@ nav ul li {
 
 nav ul li a {
   padding: 8px 10px;
+  color: #fff !important;
+  text-decoration: none !important;
   transition: all 0.3s;
 }
 
 nav ul li a.active,
 nav ul li a:hover {
-  background: #f5f5dc; /* cream */
-  color: #0a1733;
+  background: #fff;
+  color: #0a1733 !important;
   border-radius: 4px;
 }
 
-/* Dropdown */
+/* Dropdown Menu */
 .dropdown-menu {
   display: none;
   position: absolute;
   top: 38px;
   left: 0;
-  background: #1f1f1f;
+  background: #0a1733;
   list-style: none;
   padding: 10px 0;
   border-radius: 6px;
@@ -76,11 +87,11 @@ nav ul li a:hover {
   padding: 10px 15px;
 }
 
-.dropdown.open .dropdown-menu {
+.dropdown-menu.show {
   display: block;
 }
 
-/* Hamburger Menu */
+/* Hamburger Menu (Mobile) */
 .hamburger {
   display: none;
   font-size: 26px;
@@ -93,23 +104,21 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-  background: url('musicbg.png') center/cover no-repeat;
-  height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 70px;
-  text-align: center;
-}
-
-.full-overlay {
-  background-color: rgba(0, 0, 0, 0.65);
-  width: 90%;
-  padding: 40px;
-  border-radius: 15px;
+  height: 70vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  text-align: center;
+  position: relative;
+  margin-top: 70px;
+  color: #fff;
+}
+
+.hero .overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 10px;
 }
 
 .hero h1 {
@@ -123,7 +132,7 @@ nav ul li a:hover {
 }
 
 .theme {
-  color: #a2c4ff; /* light blue */
+  color: #a2c4ff;
 }
 
 /* Stats */
@@ -135,47 +144,57 @@ nav ul li a:hover {
   margin-top: 30px;
 }
 
+.stats .overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px 0;
+  width: 100%;
+}
+
 .stat .counter,
 .stat .plus-sign {
+  display: inline;
   font-size: 32px;
   font-weight: bold;
 }
 
-.stat p {
-  margin-top: 8px;
+.stat .plus-sign {
+  margin-left: 2px;
 }
 
-/* Carousel */
-.carousel-section {
+/* Best Moments */
+.best-moments {
+  background-color: #0a1733;
   padding: 40px 20px;
   text-align: center;
+  color: #fff;
 }
 
-.carousel-track {
+.best-moments h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.best-moments .moment-carousel {
   display: flex;
-  animation: scroll 25s linear infinite;
   gap: 20px;
-  margin-top: 20px;
+  justify-content: center;
+  overflow-x: auto;
+  scroll-behavior: smooth;
 }
 
-.carousel-track img {
+.best-moments .moment-carousel img {
   width: 240px;
   height: 160px;
   object-fit: cover;
-  border-radius: 8px;
-}
-
-@keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  border-radius: 10px;
 }
 
 /* Footer */
 footer {
-  background: #0d0d0d;
+  background: #0a1733;
   text-align: center;
   padding: 15px;
-  margin-top: 50px;
+  color: #fff;
 }
 
 footer .social-links img {
@@ -183,7 +202,7 @@ footer .social-links img {
   margin: 0 8px;
 }
 
-/* Responsive */
+/* Mobile */
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -196,7 +215,7 @@ footer .social-links img {
     position: absolute;
     top: 65px;
     right: 0;
-    width: 240px;
+    width: 220px;
     padding: 20px;
     gap: 10px;
   }
@@ -211,9 +230,6 @@ footer .social-links img {
   }
 
   .dropdown-menu {
-    position: static;
-    box-shadow: none;
-    padding-left: 10px;
     display: none !important;
   }
 
@@ -221,19 +237,13 @@ footer .social-links img {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .hero {
-    height: auto;
-    padding: 30px 0;
-    background-size: contain;
-  }
-
-  .full-overlay {
-    width: 95%;
-  }
-
   .club-logo {
     top: 10px;
     left: 10px;
     width: 40px;
+  }
+
+  .hero {
+    background-size: contain;
   }
 }
