@@ -183,7 +183,7 @@ nav ul li a:hover {
 .best-moments .carousel-track {
   display: flex;
   gap: 20px;
-  animation: scrollCarousel 20s linear infinite;
+  animation: scrollCarousel 10s linear infinite;
 }
 
 .best-moments .carousel-track img {
@@ -261,6 +261,7 @@ footer .social-links img {
     background-size: contain;
   }
 }
+
 
 
 
