@@ -1,13 +1,26 @@
 // Hamburger toggle
-const hamburger = document.querySelector('.hamburger');
+const hamburger = document.createElement('div');
+hamburger.classList.add('hamburger');
+hamburger.innerHTML = '&#9776;';
+const header = document.querySelector('header');
 const nav = document.querySelector('nav ul');
-if (hamburger && nav) {
+if (header && nav) {
+  header.appendChild(hamburger);
   hamburger.addEventListener('click', () => {
     nav.classList.toggle('show');
   });
 }
 
-// Dropdown on mobile
+// Close mobile nav on link click
+document.querySelectorAll('nav ul li a').forEach(link => {
+  link.addEventListener('click', () => {
+    if (window.innerWidth <= 768) {
+      nav.classList.remove('show');
+    }
+  });
+});
+
+// Dropdown toggle for mobile
 document.querySelectorAll('.dropdown > a').forEach(dropdownLink => {
   dropdownLink.addEventListener('click', (e) => {
     if (window.innerWidth <= 768) {
@@ -17,7 +30,7 @@ document.querySelectorAll('.dropdown > a').forEach(dropdownLink => {
   });
 });
 
-// Stats animation
+// Stats Counter
 const counters = document.querySelectorAll('.counter');
 const speed = 100;
 const animateCounters = () => {
@@ -33,9 +46,8 @@ const animateCounters = () => {
         counter.innerText = target;
       }
     };
-    if (counter.hasAttribute('data-target')) {
-      updateCount();
-    }
+    updateCount();
   });
 };
+
 window.addEventListener('load', animateCounters);
