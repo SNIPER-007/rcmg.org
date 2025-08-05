@@ -245,16 +245,20 @@ footer .social-links img {
     width: 40px;
   }
 }
-.piano-side {
-  position: absolute;
-  top: 70px; /* below navbar */
+.piano-scroll {
+  position: fixed;
+  top: 70px; /* below the header */
   left: 0;
-  height: 100%;
-  z-index: 0;
+  height: calc(100% - 70px); /* full height minus header */
+  overflow-y: hidden;
+  z-index: 10;
 }
 
-.piano-side img {
+.piano-scroll img {
   height: 100%;
   width: auto;
+  display: block;
 }
+
+
 
