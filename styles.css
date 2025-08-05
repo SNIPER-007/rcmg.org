@@ -175,19 +175,33 @@ nav ul li a:hover {
 }
 
 .best-moments .moment-carousel {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  overflow-x: auto;
-  scroll-behavior: smooth;
+  overflow: hidden;
+  position: relative;
+  height: 180px;
 }
 
-.best-moments .moment-carousel img {
+.best-moments .carousel-track {
+  display: flex;
+  gap: 20px;
+  animation: scrollCarousel 30s linear infinite;
+}
+
+.best-moments .carousel-track img {
   width: 240px;
   height: 160px;
   object-fit: cover;
   border-radius: 10px;
 }
+
+@keyframes scrollCarousel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 
 /* Footer */
 footer {
@@ -247,4 +261,5 @@ footer .social-links img {
     background-size: contain;
   }
 }
+
 
