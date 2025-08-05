@@ -7,8 +7,8 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #121212;
-  color: #ffffff;
+  background: #0b122b; /* Dark Blue */
+  color: #fdf5e6; /* Cream */
   font-size: 18px;
   line-height: 1.6;
 }
@@ -19,7 +19,7 @@ a {
 }
 
 header {
-  background: #1f1f1f;
+  background: #0a1a3b;
   position: fixed;
   top: 0;
   width: 100%;
@@ -38,6 +38,7 @@ header {
   height: auto;
 }
 
+/* Navigation */
 nav ul {
   list-style: none;
   display: flex;
@@ -52,12 +53,13 @@ nav ul li {
 nav ul li a {
   padding: 8px 10px;
   transition: all 0.3s;
+  color: #fdf5e6;
 }
 
 nav ul li a.active,
 nav ul li a:hover {
-  background: #fff;
-  color: #121212;
+  background: #fdf5e6;
+  color: #0b122b;
   border-radius: 4px;
 }
 
@@ -67,7 +69,7 @@ nav ul li a:hover {
   position: absolute;
   top: 38px;
   left: 0;
-  background: #1f1f1f;
+  background: #0a1a3b;
   list-style: none;
   padding: 10px 0;
   border-radius: 6px;
@@ -85,34 +87,34 @@ nav ul li a:hover {
   display: block;
 }
 
-/* Hamburger Menu (Mobile) */
+/* Hamburger Menu */
 .hamburger {
   display: none;
   font-size: 26px;
   cursor: pointer;
-  color: #fff;
+  color: #fdf5e6;
   position: absolute;
   top: 15px;
   right: 15px;
 }
 
-/* Hero Section */
+/* Hero Section with Stats Overlay */
 .hero {
   background: url('musicbg.png') center/cover no-repeat;
-  height: 70vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  height: auto;
+  padding: 100px 20px 40px;
   position: relative;
   margin-top: 70px;
-  color: #fff;
+  color: #fdf5e6;
 }
 
 .hero .overlay {
-  background-color: rgba(0, 0, 0, 0.6); /* optional dark overlay for readability */
-  padding: 40px;
-  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.75); /* stronger overlay */
+  padding: 50px 20px;
+  border-radius: 12px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .hero h1 {
@@ -126,24 +128,19 @@ nav ul li a:hover {
 }
 
 .theme {
-  color: #a2c4ff;
+  color: #a2c4ff; /* Light Blue */
 }
 
-/* Stats */
-.stats {
+/* Stats embedded in hero */
+.hero .stats {
+  margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   text-align: center;
   gap: 20px;
-  padding: 40px 20px;
-  background: #1f1f1f; /* dark background for stats section */
-  color: #fff;
-}
-
-.stats .overlay {
-  background-color: rgba(0, 0, 0, 0.6); /* dark overlay */
-  padding: 40px 0;
-  width: 100%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5); 
+  border-radius: 10px;
 }
 
 .stat .counter,
@@ -151,16 +148,19 @@ nav ul li a:hover {
   display: inline;
   font-size: 32px;
   font-weight: bold;
+  color: #fdf5e6;
 }
 
-.stat .plus-sign {
-  margin-left: 2px;
+.stat p {
+  margin-top: 8px;
+  font-size: 16px;
 }
 
 /* Carousel */
 .carousel-section {
   padding: 40px 20px;
   text-align: center;
+  background: #0b122b;
 }
 
 .carousel {
@@ -189,9 +189,10 @@ nav ul li a:hover {
 
 /* Footer */
 footer {
-  background: #0d0d0d;
+  background: #060b18;
   text-align: center;
   padding: 15px;
+  color: #fdf5e6;
 }
 
 footer .social-links img {
@@ -199,7 +200,7 @@ footer .social-links img {
   margin: 0 8px;
 }
 
-/* Mobile */
+/* Mobile Responsive */
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -208,7 +209,7 @@ footer .social-links img {
   nav ul {
     display: none;
     flex-direction: column;
-    background: #1f1f1f;
+    background: #0a1a3b;
     position: absolute;
     top: 65px;
     right: 0;
@@ -236,16 +237,11 @@ footer .social-links img {
     padding-left: 10px;
   }
 
-  .stats {
+  .hero .stats {
     grid-template-columns: repeat(2, 1fr);
   }
 
   .club-logo {
-    top: 10px;
-    left: 10px;
     width: 40px;
   }
 }
-
-
-
