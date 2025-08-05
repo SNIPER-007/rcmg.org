@@ -245,3 +245,16 @@ footer .social-links img {
     width: 40px;
   }
 }
+.piano-side {
+  position: absolute;
+  top: 70px; /* below navbar */
+  left: 0;
+  height: 100%;
+  z-index: 0;
+}
+
+.piano-side img {
+  height: 100%;
+  width: auto;
+}
+
