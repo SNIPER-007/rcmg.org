@@ -121,20 +121,6 @@ nav ul li a:hover {
   color: #a2c4ff;
 }
 
-/* Piano Element */
-.piano-scroll {
-  padding: 20px 0;
-  background: #121212;
-  text-align: center;
-}
-
-.piano-image {
-  width: 95%;
-  max-width: 900px;
-  height: auto;
-  transform: rotate(0deg);
-}
-
 /* Stats */
 .stats {
   display: grid;
@@ -142,7 +128,14 @@ nav ul li a:hover {
   text-align: center;
   gap: 20px;
   padding: 40px 20px;
-  background: #1f1f1f;
+  background: url('musicbg.png') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+}
+.stats .overlay {
+  background-color: rgba(0, 0, 0, 0.6); /* dark overlay */
+  padding: 40px 0;
+  width: 100%;
 }
 
 .stat .counter,
@@ -245,20 +238,3 @@ footer .social-links img {
     width: 40px;
   }
 }
-.piano-scroll {
-  position: fixed;
-  top: 70px; /* below the header */
-  left: 0;
-  height: calc(100% - 70px); /* full height minus header */
-  overflow-y: hidden;
-  z-index: 10;
-}
-
-.piano-scroll img {
-  height: 100%;
-  width: auto;
-  display: block;
-}
-
-
-
