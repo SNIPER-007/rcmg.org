@@ -7,10 +7,8 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #0b122b; /* Dark Blue */
-  color: #fdf5e6; /* Cream */
-  font-size: 18px;
-  line-height: 1.6;
+  background-color: #0a1733; /* Darker dark blue */
+  color: #ffffff;
 }
 
 a {
@@ -19,7 +17,7 @@ a {
 }
 
 header {
-  background: #0a1a3b;
+  background-color: #0a1733;
   position: fixed;
   top: 0;
   width: 100%;
@@ -38,7 +36,6 @@ header {
   height: auto;
 }
 
-/* Navigation */
 nav ul {
   list-style: none;
   display: flex;
@@ -53,24 +50,22 @@ nav ul li {
 nav ul li a {
   padding: 8px 10px;
   transition: all 0.3s;
-  color: #fdf5e6;
 }
 
 nav ul li a.active,
 nav ul li a:hover {
-  background: #fdf5e6;
-  color: #0b122b;
+  background: #fff;
+  color: #0a1733;
   border-radius: 4px;
 }
 
-/* Dropdown Menu */
+/* Dropdown */
 .dropdown-menu {
   display: none;
   position: absolute;
   top: 38px;
   left: 0;
-  background: #0a1a3b;
-  list-style: none;
+  background: #0a1733;
   padding: 10px 0;
   border-radius: 6px;
   min-width: 200px;
@@ -87,34 +82,38 @@ nav ul li a:hover {
   display: block;
 }
 
-/* Hamburger Menu */
 .hamburger {
   display: none;
   font-size: 26px;
   cursor: pointer;
-  color: #fdf5e6;
+  color: #fff;
   position: absolute;
-  top: 15px;
   right: 15px;
+  top: 15px;
 }
 
-/* Hero Section with Stats Overlay */
+/* Hero Section */
 .hero {
-  background: url('musicbg.png') center/cover no-repeat;
-  height: auto;
-  padding: 100px 20px 40px;
-  position: relative;
+  background-color: #0a1733;
+  color: #fff;
   margin-top: 70px;
-  color: #fdf5e6;
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.hero .overlay {
-  background-color: rgba(0, 0, 0, 0.75); /* stronger overlay */
-  padding: 50px 20px;
-  border-radius: 12px;
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
+.home-hero {
+  background: url('musicbg.png') center/cover no-repeat;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px 20px;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 960px;
 }
 
 .hero h1 {
@@ -128,19 +127,17 @@ nav ul li a:hover {
 }
 
 .theme {
-  color: #a2c4ff; /* Light Blue */
+  color: #a2c4ff;
 }
 
-/* Stats embedded in hero */
-.hero .stats {
-  margin-top: 40px;
+/* Stats */
+.stats-overlay {
+  margin-top: 30px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   text-align: center;
   gap: 20px;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.5); 
-  border-radius: 10px;
+  color: #fff;
 }
 
 .stat .counter,
@@ -148,59 +145,13 @@ nav ul li a:hover {
   display: inline;
   font-size: 32px;
   font-weight: bold;
-  color: #fdf5e6;
 }
 
-.stat p {
-  margin-top: 8px;
-  font-size: 16px;
+.stat .plus-sign {
+  margin-left: 2px;
 }
 
-/* Carousel */
-.carousel-section {
-  padding: 40px 20px;
-  text-align: center;
-  background: #0b122b;
-}
-
-.carousel {
-  overflow: hidden;
-  width: 100%;
-  margin-top: 20px;
-}
-
-.carousel-track {
-  display: flex;
-  animation: scroll 25s linear infinite;
-}
-
-.carousel-track img {
-  width: 240px;
-  height: 160px;
-  object-fit: cover;
-  margin: 0 10px;
-  border-radius: 8px;
-}
-
-@keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-
-/* Footer */
-footer {
-  background: #060b18;
-  text-align: center;
-  padding: 15px;
-  color: #fdf5e6;
-}
-
-footer .social-links img {
-  width: 28px;
-  margin: 0 8px;
-}
-
-/* Mobile Responsive */
+/* Mobile */
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -209,7 +160,7 @@ footer .social-links img {
   nav ul {
     display: none;
     flex-direction: column;
-    background: #0a1a3b;
+    background: #0a1733;
     position: absolute;
     top: 65px;
     right: 0;
@@ -237,8 +188,21 @@ footer .social-links img {
     padding-left: 10px;
   }
 
-  .hero .stats {
+  .mobile-only {
+    display: block;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .stats-overlay {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-overlay {
+    padding: 20px;
+    margin: 0 auto;
   }
 
   .club-logo {
