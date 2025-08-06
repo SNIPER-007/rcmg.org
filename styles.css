@@ -374,3 +374,50 @@ footer .social-links img {
     font-size: 24px;
   }
 }
+
+/* Past Sponsors - Professional Grid Style */
+.sponsor-past {
+  margin-top: 50px;
+  color: #FFFDD0;
+}
+
+.sponsor-past .sponsor-intro {
+  margin-bottom: 25px;
+  font-size: 18px;
+  max-width: 900px;
+}
+
+.sponsor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.sponsor-grid span {
+  background-color: #1a2e3a;
+  padding: 12px 15px;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.sponsor-grid span:hover {
+  transform: translateY(-3px);
+  background-color: #223f54;
+}
+
+.sponsor-note {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #FFFDD0;
+}
+
+@media (max-width: 768px) {
+  .sponsor-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
