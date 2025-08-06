@@ -132,7 +132,7 @@ nav ul li a:hover {
 }
 
 .theme {
-  color: #5F9EA0;
+  color: #29465B;
 }
 
 /* Stats */
@@ -163,7 +163,7 @@ nav ul li a:hover {
 
 /* Best Moments */
 .best-moments {
-  background-color: #5F9EA0;
+  background-color: #29465B;
   padding: 40px 20px;
   color: #fff;
   text-align: center;
@@ -264,6 +264,7 @@ footer .social-links img {
     background-size: contain;
   }
 }
+
 
 
 
