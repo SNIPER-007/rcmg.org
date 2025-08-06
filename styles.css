@@ -13,27 +13,21 @@ body {
   line-height: 1.6;
 }
 
-/* Homepage background */
 body.home .hero {
-  background-image: url('assets/musicbg3.png');
-  background-size: contain;
+  background-image: url('assets/musicbg5.png'); /* make sure path is correct */
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center center;
   height: 70vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  position: relative;
 }
 
 @media (max-width: 768px) {
   body.home .hero {
+    background-size: cover;
+    background-position: center center;
     height: 50vh;
-    background-size: contain;
   }
 }
-
 
 a {
   color: inherit;
@@ -157,13 +151,13 @@ body.home .hero .overlay {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
-  padding: 60px 40px;
+  padding: 50px 30px;
   background: #29465B;
   color: #FFFDD0;
   font-size: 25px;
-  max-width: 2000px;
+  max-width: 3000px;
   margin: 0 auto;
-  text-align: center;
+  text-align: right;
 }
 
 .stat .counter,
@@ -298,6 +292,7 @@ footer .social-links img {
     background-size: contain;
   }
 }
+
 
 
 
