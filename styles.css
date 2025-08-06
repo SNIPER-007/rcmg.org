@@ -15,12 +15,25 @@ body {
 
 /* Homepage background */
 body.home .hero {
-  background-image: url('assets/musicbg2.png');
-  background-size: 100% auto;
-  height: 70vh;
+  background-image: url('assets/musicbg3.png');
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center top;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
 }
+
+@media (max-width: 768px) {
+  body.home .hero {
+    height: 50vh;
+    background-size: contain;
+  }
+}
+
 
 a {
   color: inherit;
@@ -285,6 +298,7 @@ footer .social-links img {
     background-size: contain;
   }
 }
+
 
 
 
