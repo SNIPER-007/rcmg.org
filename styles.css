@@ -15,7 +15,7 @@ body {
 
 /* Homepage background */
 body.home .hero {
-  background: url('musicbg.png') center/cover no-repeat;
+  background: url('assets/musicbg1.png') center/cover no-repeat;
 }
 
 a {
@@ -264,6 +264,7 @@ footer .social-links img {
     background-size: contain;
   }
 }
+
 
 
 
