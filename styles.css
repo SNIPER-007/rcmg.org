@@ -7,8 +7,8 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #121212;
-  color: #ffffff;
+  background: #5F9EA0;
+  color: #FFFDD0;
   font-size: 18px;
   line-height: 1.6;
 }
@@ -24,7 +24,7 @@ a {
 }
 
 header {
-  background: #0a1733;
+  background: #000047;
   position: fixed;
   top: 0;
   width: 100%;
@@ -64,7 +64,7 @@ nav ul li a {
 nav ul li a.active,
 nav ul li a:hover {
   background: #fff;
-  color: #0a1733 !important;
+  color: #000047 !important;
   border-radius: 4px;
 }
 
@@ -98,7 +98,7 @@ nav ul li a:hover {
   cursor: pointer;
   color: #fff;
   position: absolute;
-  top: 15px;
+  top: 10px;
   right: 15px;
 }
 
@@ -132,7 +132,7 @@ nav ul li a:hover {
 }
 
 .theme {
-  color: #a2c4ff;
+  color: #5F9EA0;
 }
 
 /* Stats */
@@ -163,7 +163,7 @@ nav ul li a:hover {
 
 /* Best Moments */
 .best-moments {
-  background-color: #0d0d0d;
+  background-color: #5F9EA0;
   padding: 40px 20px;
   color: #fff;
   text-align: center;
@@ -208,7 +208,7 @@ nav ul li a:hover {
 
 /* Footer */
 footer {
-  background: #0a1733;
+  background: #000047;
   text-align: center;
   padding: 15px;
   color: #fff;
@@ -228,7 +228,7 @@ footer .social-links img {
   nav ul {
     display: none;
     flex-direction: column;
-    background: #0a1733;
+    background: #000047;
     position: absolute;
     top: 65px;
     right: 0;
@@ -264,6 +264,7 @@ footer .social-links img {
     background-size: contain;
   }
 }
+
 
 
 
