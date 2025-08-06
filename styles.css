@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #5F9EA0;
+  background: #29465B;
   color: #FFFDD0;
   font-size: 18px;
   line-height: 1.6;
@@ -56,14 +56,14 @@ nav ul li {
 
 nav ul li a {
   padding: 8px 10px;
-  color: #fff !important;
+  color: #FFFDD0 !important;
   text-decoration: none !important;
   transition: all 0.3s;
 }
 
 nav ul li a.active,
 nav ul li a:hover {
-  background: #fff;
+  background: #FFFDD0;
   color: #000047 !important;
   border-radius: 4px;
 }
@@ -98,7 +98,7 @@ nav ul li a:hover {
   cursor: pointer;
   color: #fff;
   position: absolute;
-  top: 10px;
+  top: 15px;
   right: 15px;
 }
 
@@ -264,6 +264,7 @@ footer .social-links img {
     background-size: contain;
   }
 }
+
 
 
 
