@@ -115,7 +115,7 @@ nav ul li a:hover {
   color: #fff;
 }
 
-.hero .overlay {
+body.home .hero .overlay {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 40px;
   border-radius: 10px;
@@ -264,6 +264,7 @@ footer .social-links img {
     background-size: contain;
   }
 }
+
 
 
 
