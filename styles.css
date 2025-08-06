@@ -211,7 +211,7 @@ footer {
   background: #000047;
   text-align: center;
   padding: 15px;
-  color: #fff;
+  color: #FFFDD0;
 }
 
 footer .social-links img {
@@ -264,6 +264,7 @@ footer .social-links img {
     background-size: contain;
   }
 }
+
 
 
 
