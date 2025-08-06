@@ -32,14 +32,14 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 25px;
+  padding: 25px 25px;
 }
 
 .club-logo {
   position: absolute;
-  top: 9px;
+  top: 10px;
   left: 12px;
-  width: 50px;
+  width: 53px;
   height: auto;
 }
 
@@ -96,9 +96,9 @@ nav ul li a:hover {
   display: none;
   font-size: 26px;
   cursor: pointer;
-  color: #fff;
+  color: #FFFDD0;
   position: absolute;
-  top: 15px;
+  top: 10px;
   right: 15px;
 }
 
@@ -112,7 +112,7 @@ nav ul li a:hover {
   text-align: center;
   position: relative;
   margin-top: 70px;
-  color: #fff;
+  color: #FFFDD0;
 }
 
 body.home .hero .overlay {
@@ -165,7 +165,7 @@ body.home .hero .overlay {
 .best-moments {
   background-color: #29465B;
   padding: 40px 20px;
-  color: #fff;
+  color: #FFFDD0;
   text-align: center;
 }
 
@@ -264,6 +264,7 @@ footer .social-links img {
     background-size: contain;
   }
 }
+
 
 
 
