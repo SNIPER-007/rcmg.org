@@ -117,6 +117,17 @@ body.home .hero {
   color: #FFFDD0;
 }
 
+.hero-title {
+  color: #FFFDD0; /* cream text color */
+  text-shadow:
+    -1px -1px 0 #000047,  
+     1px -1px 0 #000047,
+    -1px  1px 0 #000047,
+     1px  1px 0 #000047;  /* dark blue outline */
+  font-size: 42px;
+  font-weight: bold;
+}
+
 @media (max-width: 768px) {
   body.home .hero {
     height: 50vh;
@@ -127,6 +138,16 @@ body.home .hero {
     font-size: 28px;
     padding: 0 10px;
   }
+  .hero-title {
+  color: #FFFDD0; /* cream text color */
+  text-shadow:
+    -1px -1px 0 #000047,  
+     1px -1px 0 #000047,
+    -1px  1px 0 #000047,
+     1px  1px 0 #000047;  /* dark blue outline */
+  font-size: 42px;
+  font-weight: bold;
+}
 }
 
 /* Stats Section (below hero) */
@@ -281,6 +302,7 @@ footer .social-links img {
     width: 40px;
   }
 }
+
 
 
 
