@@ -332,3 +332,45 @@ footer .social-links img {
   font-size: 18px;
   text-align: justify;
 }
+
+/* Sponsors Page */
+.sponsor-page {
+  padding: 120px 30px 60px;
+  background-color: #29465B;
+  color: #FFFDD0;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.sponsor-page h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #FFFDD0;
+  padding-bottom: 5px;
+}
+
+.no-sponsors {
+  font-style: italic;
+  color: #ccc;
+}
+
+.sponsor-list {
+  margin-top: 15px;
+}
+
+.sponsor-note {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #FFFDD0;
+}
+
+@media (max-width: 768px) {
+  .sponsor-page {
+    padding: 100px 20px 40px;
+    font-size: 16px;
+  }
+
+  .sponsor-page h2 {
+    font-size: 24px;
+  }
+}
