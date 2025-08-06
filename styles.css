@@ -135,7 +135,7 @@ body.home .hero {
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   padding: 50px 30px;
-  background: #29465B;
+  background: #001B2D;
   color: #FFFDD0;
   font-size: 25px;
   max-width: 1200px;
@@ -267,3 +267,4 @@ footer .social-links img {
     width: 40px;
   }
 }
+
