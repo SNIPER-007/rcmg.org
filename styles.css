@@ -144,9 +144,9 @@ body.home .hero {
 }
 
 .stat-icon {
-  width: 36px;
-  height: 36px;
-  margin-bottom: 8px;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 13px;
 }
 
 .stat .counter,
@@ -171,7 +171,12 @@ body.home .hero {
     padding: 40px 20px;
     font-size: 18px;
   }
-
+.stat-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 12px;
+}
+  
   .stat .counter,
   .stat .plus-sign {
     font-size: 32px;
@@ -276,6 +281,7 @@ footer .social-links img {
     width: 40px;
   }
 }
+
 
 
 
