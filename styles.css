@@ -463,3 +463,46 @@ footer .social-links img {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* Achievements Page */
+.achievement-gallery {
+  padding: 50px 30px;
+  background-color: #29465B;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  color: #FFFDD0;
+}
+
+.achievement-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.achievement-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+.achievement-card:hover img {
+  transform: scale(1.05);
+}
+
+.achievement-card .caption {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #FFFDD0;
+  padding: 10px 15px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 500;
+}
