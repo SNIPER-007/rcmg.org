@@ -541,6 +541,8 @@ footer .social-links img {
 }
 .hero.join {
   padding-top: 60px;
+  text-align: center;
+  text-shadow: 1px 1px #000047;
 }
 
 .involve-content {
@@ -577,5 +579,6 @@ footer .social-links img {
 .whatsapp-btn:hover {
   background-color: #1ebe5d;
 }
+
 
 
