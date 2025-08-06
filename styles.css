@@ -16,7 +16,8 @@ body {
 /* Homepage background */
 body.home .hero {
   background-image: url('assets/musicbg2.png');
-  background-size: 100% 100%;      /* Stretch to full width and height */
+  background-size: 100% auto;
+  height: 70vh;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -284,6 +285,7 @@ footer .social-links img {
     background-size: contain;
   }
 }
+
 
 
 
