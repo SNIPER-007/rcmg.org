@@ -506,3 +506,39 @@ footer .social-links img {
   text-align: center;
   font-weight: 500;
 }
+
+/* Join Section */
+.join-section {
+  background-color: #29465B;
+  color: #FFFDD0;
+  text-align: center;
+  padding: 60px 30px;
+}
+
+.join-section h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.join-section p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.whatsapp-button {
+  display: inline-block;
+  background-color: #25D366;
+  color: white;
+  font-size: 18px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.whatsapp-button:hover {
+  background-color: #1DA851;
+}
