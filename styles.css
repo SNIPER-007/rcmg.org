@@ -465,14 +465,39 @@ footer .social-links img {
 }
 
 /* Achievements Page */
-.achievement-gallery {
-  padding: 50px 30px;
-  background-color: #29465B;
+.achievements-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 30px;
-  justify-items: center;
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.achievement-box {
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
   color: #FFFDD0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
+
+.achievement-box:hover {
+  transform: translateY(-5px);
+}
+
+.achievement-box img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.achievement-box p {
+  margin-top: 15px;
+  font-size: 16px;
 }
 
 .achievement-card {
@@ -508,37 +533,44 @@ footer .social-links img {
 }
 
 /* Join Section */
-.join-section {
+.get-involved-section {
   background-color: #29465B;
   color: #FFFDD0;
   text-align: center;
-  padding: 60px 30px;
+  padding: 60px 20px;
 }
 
-.join-section h2 {
-  font-size: 30px;
-  margin-bottom: 15px;
-}
-
-.join-section p {
-  font-size: 18px;
-  margin-bottom: 30px;
+.involve-content {
   max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
-.whatsapp-button {
+.involve-img {
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.involve-text {
+  font-size: 20px;
+  margin-bottom: 25px;
+  line-height: 1.8;
+}
+
+.whatsapp-btn {
   display: inline-block;
   background-color: #25D366;
   color: white;
+  padding: 14px 28px;
   font-size: 18px;
-  padding: 12px 24px;
   border-radius: 8px;
   text-decoration: none;
   transition: background 0.3s;
 }
 
-.whatsapp-button:hover {
-  background-color: #1DA851;
+.whatsapp-btn:hover {
+  background-color: #1ebe5d;
 }
