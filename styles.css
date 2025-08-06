@@ -163,10 +163,10 @@ nav ul li a:hover {
 
 /* Best Moments */
 .best-moments {
-  background-color: #0a1733;
+  background-color: #0d0d0d;
   padding: 40px 20px;
-  text-align: center;
   color: #fff;
+  text-align: center;
 }
 
 .best-moments h2 {
@@ -174,28 +174,31 @@ nav ul li a:hover {
   margin-bottom: 20px;
 }
 
-.best-moments .moment-carousel {
+.moment-carousel {
   overflow: hidden;
-  position: relative;
+  width: 100%;
   height: 180px;
+  position: relative;
 }
 
-.best-moments .carousel-track {
+.carousel-track {
   display: flex;
-  gap: 20px;
-  animation: scrollCarousel 10s linear infinite;
+  width: max-content;
+  animation: seamlessScroll 30s linear infinite;
 }
 
-.best-moments .carousel-track img {
+.carousel-track img {
   width: 240px;
   height: 160px;
   object-fit: cover;
   border-radius: 10px;
+  margin-right: 20px;
 }
 
-@keyframes scrollCarousel {
+/* The seamless scroll magic */
+@keyframes seamlessScroll {
   0% {
-    transform: translateX(0);
+    transform: translateX(0%);
   }
   100% {
     transform: translateX(-50%);
@@ -261,6 +264,7 @@ footer .social-links img {
     background-size: contain;
   }
 }
+
 
 
 
