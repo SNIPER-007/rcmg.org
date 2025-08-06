@@ -143,17 +143,26 @@ body.home .hero {
   text-align: center;
 }
 
+.stat-icon {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 8px;
+}
+
 .stat .counter,
-.stat .plus-sign {
+.stat .plus-sign 
+.stat br + * { /* Targets 'Members', 'Zone', etc. */
   display: inline;
   font-size: 40px;
   font-weight: bold;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
 }
 
 .stat p {
   margin-top: 10px;
   font-size: 22px;
   font-weight: 500;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
 
 @media (max-width: 768px) {
@@ -267,5 +276,6 @@ footer .social-links img {
     width: 40px;
   }
 }
+
 
 
