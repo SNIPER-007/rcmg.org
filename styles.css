@@ -135,10 +135,10 @@ body.home .hero {
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   padding: 50px 30px;
-  background: #001B2D;
+  background: color-mix(in srgb, #29465B 95%, black 5%);
   color: #FFFDD0;
   font-size: 25px;
-  max-width: 1200px;
+  max-width: auto;
   margin: 0 auto;
   text-align: center;
 }
@@ -267,4 +267,5 @@ footer .social-links img {
     width: 40px;
   }
 }
+
 
