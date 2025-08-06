@@ -15,7 +15,10 @@ body {
 
 /* Homepage background */
 body.home .hero {
-  background: url('assets/musicbg1.png') center/cover no-repeat;
+  background-image: url('assets/musicbg2.png');
+  background-size: 100% 100%;      /* Stretch to full width and height */
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 a {
@@ -139,26 +142,43 @@ body.home .hero .overlay {
 .stats {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 60px 40px;
+  background: #29465B;
+  color: #FFFDD0;
+  font-size: 25px;
+  max-width: 2000px;
+  margin: 0 auto;
   text-align: center;
-  gap: 20px;
-  margin-top: 30px;
-}
-
-.stats .overlay {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 30px 0;
-  width: 100%;
 }
 
 .stat .counter,
 .stat .plus-sign {
   display: inline;
-  font-size: 32px;
+  font-size: 40px;
   font-weight: bold;
 }
 
-.stat .plus-sign {
-  margin-left: 2px;
+.stat p {
+  margin-top: 10px;
+  font-size: 22px;
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 40px 20px;
+    font-size: 18px;
+  }
+
+  .stat .counter,
+  .stat .plus-sign {
+    font-size: 32px;
+  }
+
+  .stat p {
+    font-size: 18px;
+  }
 }
 
 /* Best Moments */
@@ -264,6 +284,7 @@ footer .social-links img {
     background-size: contain;
   }
 }
+
 
 
 
