@@ -32,12 +32,12 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px 25px;
+  padding: 18px 25px;
 }
 
 .club-logo {
   position: absolute;
-  top: 8px;
+  top: 6px;
   left: 12px;
   width: 50px;
   height: auto;
@@ -264,6 +264,7 @@ footer .social-links img {
     background-size: contain;
   }
 }
+
 
 
 
