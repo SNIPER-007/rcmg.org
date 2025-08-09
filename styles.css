@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #29465B;
+  background: #7cadd1;
   color: #FFFDD0;
   font-size: 18px;
   line-height: 1.6;
@@ -139,27 +139,26 @@ body.home .hero {
     padding: 0 10px;
   }
   .hero-title {
-  color: #FFFDD0; /* cream text color */
-  text-shadow:
-    -1px -1px 0 #000047,  
-     1px -1px 0 #000047,
-    -1px  1px 0 #000047,
-     1px  1px 0 #000047;  /* dark blue outline */
-  font-size: 42px;
-  font-weight: bold;
-}
+    color: #FFFDD0;
+    text-shadow:
+      -1px -1px 0 #000047,  
+       1px -1px 0 #000047,
+      -1px  1px 0 #000047,
+       1px  1px 0 #000047;
+    font-size: 42px;
+    font-weight: bold;
+  }
 }
 
-/* Stats Section (below hero) */
+/* Stats Section */
 .stats {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   padding: 50px 30px;
-  background: color-mix(in srgb, #29465B 95%, black 5%);
+  background: color-mix(in srgb, #7cadd1 95%, black 5%);
   color: #FFFDD0;
   font-size: 25px;
-  max-width: auto;
   margin: 0 auto;
   text-align: center;
 }
@@ -172,7 +171,7 @@ body.home .hero {
 
 .stat .counter,
 .stat .plus-sign 
-.stat br + * { /* Targets 'Members', 'Zone', etc. */
+.stat br + * {
   display: inline;
   font-size: 40px;
   font-weight: bold;
@@ -192,17 +191,15 @@ body.home .hero {
     padding: 40px 20px;
     font-size: 18px;
   }
-.stat-icon {
-  width: 40px;
-  height: 40px;
-  margin-bottom: 12px;
-}
-  
+  .stat-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 12px;
+  }
   .stat .counter,
   .stat .plus-sign {
     font-size: 32px;
   }
-
   .stat p {
     font-size: 18px;
   }
@@ -210,7 +207,7 @@ body.home .hero {
 
 /* Best Moments */
 .best-moments {
-  background-color: #29465B;
+  background-color: #7cadd1;
   padding: 40px 20px;
   color: #FFFDD0;
   text-align: center;
@@ -242,14 +239,9 @@ body.home .hero {
   margin-right: 20px;
 }
 
-/* Seamless Scroll */
 @keyframes seamlessScroll {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
 }
 
 /* Footer */
@@ -265,12 +257,9 @@ footer .social-links img {
   margin: 0 8px;
 }
 
-/* Mobile Adjustments */
+/* Mobile Menu */
 @media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-
+  .hamburger { display: block; }
   nav ul {
     display: none;
     flex-direction: column;
@@ -282,30 +271,16 @@ footer .social-links img {
     padding: 20px;
     gap: 10px;
   }
-
-  nav ul.show {
-    display: flex;
-  }
-
-  nav ul li {
-    width: 100%;
-    text-align: left;
-  }
-
-  .dropdown-menu {
-    display: none !important;
-  }
-
-  .club-logo {
-    top: 10px;
-    left: 10px;
-    width: 40px;
-  }
+  nav ul.show { display: flex; }
+  nav ul li { width: 100%; text-align: left; }
+  .dropdown-menu { display: none !important; }
+  .club-logo { top: 10px; left: 10px; width: 40px; }
 }
 
+/* About Page */
 .about {
   padding: 120px 20px 40px;
-  background: #29465B;
+  background: #7cadd1;
   color: #FFFDD0;
   max-width: 1000px;
   margin: 0 auto;
@@ -336,7 +311,7 @@ footer .social-links img {
 /* Sponsors Page */
 .sponsor-page {
   padding: 120px 30px 60px;
-  background-color: #29465B;
+  background-color: #7cadd1;
   color: #FFFDD0;
   font-size: 18px;
   line-height: 1.8;
@@ -364,18 +339,7 @@ footer .social-links img {
   color: #FFFDD0;
 }
 
-@media (max-width: 768px) {
-  .sponsor-page {
-    padding: 100px 20px 40px;
-    font-size: 16px;
-  }
-
-  .sponsor-page h2 {
-    font-size: 24px;
-  }
-}
-
-/* Past Sponsors - Professional Grid Style */
+/* Past Sponsors Grid */
 .sponsor-past {
   margin-top: 50px;
   color: #FFFDD0;
@@ -416,16 +380,10 @@ footer .social-links img {
   color: #FFFDD0;
 }
 
-@media (max-width: 768px) {
-  .sponsor-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Meet the Team Section */
+/* Team Page */
 .team-section {
   padding: 60px 30px;
-  background-color: #29465B;
+  background-color: #7cadd1;
   color: #FFFDD0;
   text-align: center;
 }
@@ -454,17 +412,7 @@ footer .social-links img {
   transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
-  .team-section {
-    padding: 40px 15px;
-  }
-
-  .team-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Achievements Page */
+/* Achievements */
 .achievements-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -472,32 +420,6 @@ footer .social-links img {
   padding: 50px 20px;
   max-width: 1200px;
   margin: 0 auto;
-}
-
-.achievement-box {
-  background-color: #1f1f1f;
-  padding: 20px;
-  border-radius: 12px;
-  text-align: center;
-  color: #FFFDD0;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  transition: transform 0.3s;
-}
-
-.achievement-box:hover {
-  transform: translateY(-5px);
-}
-
-.achievement-box img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.achievement-box p {
-  margin-top: 15px;
-  font-size: 16px;
 }
 
 .achievement-card {
@@ -532,13 +454,14 @@ footer .social-links img {
   font-weight: 500;
 }
 
-/* Join Section */
+/* Join Page */
 .get-involved-section {
-  background-color: #29465B;
+  background-color: #7cadd1;
   color: #FFFDD0;
   text-align: center;
   padding: 60px 20px;
 }
+
 .hero.join {
   padding-top: 62px;
   text-align: center;
@@ -579,7 +502,3 @@ footer .social-links img {
 .whatsapp-btn:hover {
   background-color: #1ebe5d;
 }
-
-
-
-
