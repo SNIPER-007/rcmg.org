@@ -456,7 +456,12 @@ footer .social-links img {
   font-size: 20px;
   margin-bottom: 25px;
   line-height: 1.8;
-  colour: #FFFFFF;
+}
+
+.hero.join h1,
+.hero.join .hero-title {
+  color: #0C4A6E; /* Deep Cerulean Blue for visibility */
+  text-shadow: none; /* remove shadow for clarity */
 }
 
 .whatsapp-btn {
@@ -473,6 +478,7 @@ footer .social-links img {
 .whatsapp-btn:hover {
   background-color: #1ebe5d;
 }
+
 
 
 
