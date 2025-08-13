@@ -33,9 +33,9 @@ header {
 
 .club-logo {
   position: absolute;
-  top: 12px;
-  left: 12px;
-  width: 53px;
+  top: 10px;
+  left: 10px;
+  width: 38px;
   height: auto;
 }
 
@@ -77,7 +77,7 @@ nav ul li a:hover {
 
 /* ===== Hero Section ===== */
 body.home .hero {
-  background-image: url('assets/musicbg5.png');
+  background-image: url('assets/musicbg6.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -472,3 +472,4 @@ footer .social-links img {
 .whatsapp-btn:hover {
   background-color: #1ebe5d;
 }
+
