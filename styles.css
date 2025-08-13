@@ -1,4 +1,6 @@
-/* Reset */
+/* =========================
+   RESET & BASE
+========================= */
 * {
   margin: 0;
   padding: 0;
@@ -16,8 +18,12 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 
+/* =========================
+   HEADER & NAVIGATION
+========================= */
 header {
   background: #000047;
   position: fixed;
@@ -51,15 +57,15 @@ nav ul li {
 
 nav ul li a {
   padding: 8px 10px;
-  color: #FFFDD0 !important;
+  color: #f8f5e1 !important;
+  font-weight: 500;
   text-decoration: none !important;
-  transition: all 0.3s;
 }
 
 nav ul li a.active,
 nav ul li a:hover {
-  background: #FFFDD0;
   color: #000047 !important;
+  background: #f8f5e1;
   border-radius: 4px;
 }
 
@@ -97,7 +103,9 @@ nav ul li a:hover {
   right: 15px;
 }
 
-/* Hero Section */
+/* =========================
+   HERO SECTION
+========================= */
 body.home .hero {
   background-image: url('assets/musicbg5.png');
   background-size: cover;
@@ -118,16 +126,17 @@ body.home .hero {
 }
 
 .hero-title {
-  color: #FFFDD0; /* cream text color */
+  color: #FFFDD0;
   text-shadow:
-    -1px -1px 0 #000047,  
+    -1px -1px 0 #000047,
      1px -1px 0 #000047,
     -1px  1px 0 #000047,
-     1px  1px 0 #000047;  /* dark blue outline */
+     1px  1px 0 #000047;
   font-size: 42px;
   font-weight: bold;
 }
 
+/* Mobile Hero Adjustments */
 @media (max-width: 768px) {
   body.home .hero {
     height: 50vh;
@@ -138,19 +147,11 @@ body.home .hero {
     font-size: 28px;
     padding: 0 10px;
   }
-  .hero-title {
-    color: #FFFDD0;
-    text-shadow:
-      -1px -1px 0 #000047,  
-       1px -1px 0 #000047,
-      -1px  1px 0 #000047,
-       1px  1px 0 #000047;
-    font-size: 42px;
-    font-weight: bold;
-  }
 }
 
-/* Stats Section */
+/* =========================
+   STATS SECTION
+========================= */
 .stats {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -170,11 +171,10 @@ body.home .hero {
 }
 
 .stat .counter,
-.stat .plus-sign 
-.stat br + * {
-  display: inline;
+.stat .plus-sign {
   font-size: 40px;
   font-weight: bold;
+  display: inline;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
 }
 
@@ -185,27 +185,32 @@ body.home .hero {
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
 
+/* Stats Mobile */
 @media (max-width: 768px) {
   .stats {
     grid-template-columns: repeat(2, 1fr);
     padding: 40px 20px;
-    font-size: 18px;
   }
+
   .stat-icon {
     width: 40px;
     height: 40px;
     margin-bottom: 12px;
   }
+
   .stat .counter,
   .stat .plus-sign {
     font-size: 32px;
   }
+
   .stat p {
     font-size: 18px;
   }
 }
 
-/* Best Moments */
+/* =========================
+   BEST MOMENTS SECTION
+========================= */
 .best-moments {
   background-color: #7cadd1;
   padding: 40px 20px;
@@ -244,12 +249,14 @@ body.home .hero {
   100% { transform: translateX(-50%); }
 }
 
-/* Footer */
+/* =========================
+   FOOTER
+========================= */
 footer {
   background: #000047;
   text-align: center;
   padding: 15px;
-  color: #FFFDD0;
+  color: #f8f5e1;
 }
 
 footer .social-links img {
@@ -257,27 +264,9 @@ footer .social-links img {
   margin: 0 8px;
 }
 
-/* Mobile Menu */
-@media (max-width: 768px) {
-  .hamburger { display: block; }
-  nav ul {
-    display: none;
-    flex-direction: column;
-    background: #000047;
-    position: absolute;
-    top: 65px;
-    right: 0;
-    width: 220px;
-    padding: 20px;
-    gap: 10px;
-  }
-  nav ul.show { display: flex; }
-  nav ul li { width: 100%; text-align: left; }
-  .dropdown-menu { display: none !important; }
-  .club-logo { top: 10px; left: 10px; width: 40px; }
-}
-
-/* About Page */
+/* =========================
+   ABOUT US PAGE
+========================= */
 .about {
   padding: 120px 20px 40px;
   background: #7cadd1;
@@ -308,13 +297,13 @@ footer .social-links img {
   text-align: justify;
 }
 
-/* Sponsors Page */
+/* =========================
+   SPONSORS PAGE
+========================= */
 .sponsor-page {
   padding: 120px 30px 60px;
   background-color: #7cadd1;
   color: #FFFDD0;
-  font-size: 18px;
-  line-height: 1.8;
 }
 
 .sponsor-page h2 {
@@ -329,20 +318,8 @@ footer .social-links img {
   color: #ccc;
 }
 
-.sponsor-list {
-  margin-top: 15px;
-}
-
-.sponsor-note {
-  margin-top: 20px;
-  font-weight: bold;
-  color: #FFFDD0;
-}
-
-/* Past Sponsors Grid */
 .sponsor-past {
   margin-top: 50px;
-  color: #FFFDD0;
 }
 
 .sponsor-past .sponsor-intro {
@@ -355,7 +332,6 @@ footer .social-links img {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 15px;
-  margin-top: 20px;
 }
 
 .sponsor-grid span {
@@ -364,7 +340,6 @@ footer .social-links img {
   border-radius: 6px;
   text-align: center;
   font-size: 16px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s ease;
 }
 
@@ -377,14 +352,14 @@ footer .social-links img {
   margin-top: 30px;
   font-size: 18px;
   font-weight: bold;
-  color: #FFFDD0;
 }
 
-/* Team Page */
+/* =========================
+   TEAM PAGE
+========================= */
 .team-section {
   padding: 60px 30px;
   background-color: #7cadd1;
-  color: #FFFDD0;
   text-align: center;
 }
 
@@ -404,7 +379,6 @@ footer .social-links img {
   width: 100%;
   max-width: 180px;
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
   transition: transform 0.3s;
 }
 
@@ -412,7 +386,9 @@ footer .social-links img {
   transform: scale(1.05);
 }
 
-/* Achievements */
+/* =========================
+   ACHIEVEMENTS PAGE
+========================= */
 .achievements-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -426,20 +402,13 @@ footer .social-links img {
   position: relative;
   overflow: hidden;
   border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
 }
 
 .achievement-card img {
   width: 100%;
   height: 230px;
   object-fit: cover;
-  display: block;
   border-radius: 12px;
-  transition: transform 0.3s;
-}
-
-.achievement-card:hover img {
-  transform: scale(1.05);
 }
 
 .achievement-card .caption {
@@ -454,10 +423,11 @@ footer .social-links img {
   font-weight: 500;
 }
 
-/* Join Page */
+/* =========================
+   GET INVOLVED PAGE
+========================= */
 .get-involved-section {
   background-color: #7cadd1;
-  color: #FFFDD0;
   text-align: center;
   padding: 60px 20px;
 }
@@ -476,7 +446,6 @@ footer .social-links img {
 .involve-img {
   width: 100%;
   max-width: 650px;
-  height: auto;
   border-radius: 12px;
   margin-bottom: 25px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.4);
@@ -495,10 +464,30 @@ footer .social-links img {
   padding: 14px 28px;
   font-size: 18px;
   border-radius: 8px;
-  text-decoration: none;
-  transition: background 0.3s;
 }
 
 .whatsapp-btn:hover {
   background-color: #1ebe5d;
+}
+
+/* =========================
+   MOBILE NAVIGATION
+========================= */
+@media (max-width: 768px) {
+  .hamburger { display: block; }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #000047;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    width: 220px;
+    padding: 20px;
+    gap: 10px;
+  }
+  nav ul.show { display: flex; }
+  nav ul li { width: 100%; text-align: left; }
+  .dropdown-menu { display: none !important; }
+  .club-logo { top: 10px; left: 10px; width: 40px; }
 }
