@@ -77,7 +77,7 @@ nav ul li a:hover {
 
 /* ===== Hero Section ===== */
 body.home .hero {
-  background-image: url('assets/musicbg6.png');
+  background-image: url('assets/musicbg7.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -517,6 +517,7 @@ footer .social-links img {
 .whatsapp-btn:hover {
   background-color: #1ebe5d;
 }
+
 
 
 
