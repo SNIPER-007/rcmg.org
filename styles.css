@@ -301,19 +301,49 @@ footer .social-links img {
   padding-bottom: 5px;
 }
 
-.no-sponsors {
-  font-style: italic;
-  color: #555;
+/* ---- Sponsors for This Year ---- */
+.sponsor-current {
+  margin-top: 50px;
+  padding: 30px 25px;
+  background: #F8FAFC; /* soft white */
+  border-left: 6px solid #38BDF8; /* accent stripe */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  color: #111827;
 }
 
-.sponsor-list {
+.sponsor-current h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #0C4A6E; /* deep cerulean blue */
+  font-weight: bold;
+  border-bottom: 2px solid #FBBF24; /* warm gold underline */
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.sponsor-current .no-sponsors {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
   margin-top: 15px;
 }
 
-.sponsor-note {
-  margin-top: 20px;
-  font-weight: bold;
-  color: #111827;
+.sponsor-current .no-sponsors span {
+  background: #E0F2FE; /* light blue background */
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #0C4A6E;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.sponsor-current .no-sponsors span:hover {
+  background: #BAE6FD; /* brighter sky blue */
+  transform: translateY(-3px);
 }
 
 /* Past Sponsors */
@@ -487,6 +517,7 @@ footer .social-links img {
 .whatsapp-btn:hover {
   background-color: #1ebe5d;
 }
+
 
 
 
