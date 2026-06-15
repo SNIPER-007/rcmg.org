@@ -518,10 +518,354 @@ footer .social-links img {
   background-color: #1ebe5d;
 }
 
+/* =========================
+   PREMIUM ENHANCEMENTS
+========================= */
 
+html {
+  scroll-behavior: smooth;
+}
 
+section {
+  animation: fadeInUp 0.8s ease;
+}
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
+/* Intro Section */
+
+.intro-section {
+  padding: 70px 20px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.intro-section h2 {
+  color: #0C4A6E;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.intro-section p {
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+/* Impact Cards */
+
+.impact-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 25px;
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.impact-card {
+  background: white;
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: .3s;
+}
+
+.impact-card:hover {
+  transform: translateY(-8px);
+}
+
+.impact-card h3 {
+  color: #0C4A6E;
+  margin-bottom: 10px;
+}
+
+/* Team Cards */
+
+.team-grid {
+  gap: 35px;
+}
+
+.team-grid img {
+  max-width: 220px;
+  transition: .35s;
+}
+
+.team-grid img:hover {
+  transform: translateY(-8px) scale(1.03);
+}
+
+/* Achievement Dashboard */
+
+.achievement-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 25px;
+  padding: 20px;
+}
+
+.achievement-card {
+  background: white;
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: .3s;
+}
+
+.achievement-card:hover {
+  transform: translateY(-8px);
+}
+
+.achievement-card h3 {
+  color: #0C4A6E;
+  margin-bottom: 15px;
+}
+
+/* Better Stats */
+
+.stat {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  transition: .3s;
+}
+
+.stat:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Better Footer */
+
+footer {
+  margin-top: 40px;
+}
+
+footer .social-links img {
+  transition: .3s;
+}
+
+footer .social-links img:hover {
+  transform: translateY(-5px);
+}
+
+.intro-section {
+  padding: 70px 20px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.intro-section h2 {
+  color: #0C4A6E;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.intro-section p {
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.impact-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.impact-card {
+  background: white;
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.impact-card:hover {
+  transform: translateY(-8px);
+}
+
+.impact-card h3 {
+  color: #0C4A6E;
+  margin-bottom: 12px;
+}
+
+.team-grid img {
+  max-width: 220px;
+  transition: 0.35s;
+}
+
+.team-grid img:hover {
+  transform: translateY(-8px) scale(1.03);
+}
+
+/* ========================================
+   AWARD WEBSITE ENHANCEMENTS
+   Add at END of styles.css
+======================================== */
+
+/* Smooth Page Feel */
+body{
+  overflow-x:hidden;
+}
+
+/* Navbar Glass Effect */
+header{
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+}
+
+/* Consistent Section Spacing */
+section{
+  scroll-margin-top:100px;
+}
+
+/* Better Hero Titles */
+.hero h1{
+  letter-spacing:1px;
+  animation: fadeUp 1s ease;
+}
+
+.hero-title{
+  animation: fadeUp 1s ease;
+}
+
+/* Better Stats */
+.stat{
+  border:1px solid rgba(12,74,110,0.08);
+}
+
+.stat:hover{
+  transform:translateY(-10px);
+  box-shadow:0 20px 35px rgba(0,0,0,0.12);
+}
+
+/* Sponsors */
+.sponsor-grid span,
+.no-sponsors span{
+  transition:all .3s ease;
+}
+
+.sponsor-grid span:hover,
+.no-sponsors span:hover{
+  transform:translateY(-5px);
+  box-shadow:0 8px 18px rgba(0,0,0,0.12);
+}
+
+/* Team Images */
+.team-grid img{
+  border:4px solid white;
+}
+
+.team-grid img:hover{
+  box-shadow:0 15px 25px rgba(0,0,0,0.18);
+}
+
+/* Achievement Cards */
+.achievement-card{
+  transition:all .35s ease;
+}
+
+.achievement-card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 20px 35px rgba(0,0,0,0.18);
+}
+
+/* About Page */
+.about-section{
+  background:white;
+  padding:30px;
+  border-radius:16px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.06);
+}
+
+.about-section:not(:last-child){
+  margin-bottom:25px;
+}
+
+/* Join Page Cards */
+.impact-card{
+  border-top:4px solid #38BDF8;
+}
+
+/* Buttons */
+.whatsapp-btn{
+  font-weight:600;
+  letter-spacing:.5px;
+  box-shadow:0 8px 18px rgba(37,211,102,.25);
+}
+
+.whatsapp-btn:hover{
+  transform:translateY(-3px);
+}
+
+/* Footer */
+footer{
+  border-top:4px solid #38BDF8;
+}
+
+footer .social-links img{
+  transition:.3s;
+}
+
+footer .social-links img:hover{
+  transform:translateY(-6px) scale(1.08);
+}
+
+/* Scroll Animation */
+.fade-in{
+  opacity:0;
+  transform:translateY(30px);
+  animation:fadeUp .8s ease forwards;
+}
+
+@keyframes fadeUp{
+  from{
+    opacity:0;
+    transform:translateY(30px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+/* Mobile Improvements */
+@media (max-width:768px){
+
+  .hero h1{
+    font-size:28px;
+  }
+
+  .intro-section h2,
+  .team-section h2,
+  .about-section h2{
+    font-size:24px;
+  }
+
+  .impact-section{
+    grid-template-columns:1fr;
+  }
+
+  .team-grid{
+    gap:20px;
+  }
+
+  .team-grid img{
+    max-width:180px;
+  }
+}
 
 
 

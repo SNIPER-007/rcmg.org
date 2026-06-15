@@ -32,25 +32,37 @@ if (galleryToggle) {
   });
 }
 
-// Stats Counter Animation
+// Counter Animation
+
 const counters = document.querySelectorAll('.counter');
-const speed = 100;
 
 const animateCounters = () => {
+
   counters.forEach(counter => {
-    const updateCount = () => {
-      const target = +counter.getAttribute('data-target');
-      const count = +counter.innerText;
-      const increment = target / speed;
-      if (count < target) {
-        counter.innerText = Math.ceil(count + increment);
-        setTimeout(updateCount, 50);
+
+    const target = +counter.dataset.target;
+
+    let current = 0;
+
+    const increment = target / 100;
+
+    const update = () => {
+
+      current += increment;
+
+      if(current < target){
+        counter.innerText = Math.ceil(current);
+        requestAnimationFrame(update);
       } else {
         counter.innerText = target;
       }
+
     };
-    updateCount();
+
+    update();
+
   });
+
 };
 
 window.addEventListener('load', animateCounters);
